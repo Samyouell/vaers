@@ -1,0 +1,31 @@
+{
+  "variables" : [ {
+    "name" : "NEO4J_HOST_SERVER",
+    "value" : "localhost",
+    "description" : ""
+  }, {
+    "name" : "NEO4J_USERNAME",
+    "value" : "YOUR_NEO4J_USERNAME",
+    "description" : ""
+  }, {
+    "name" : "NEO4J_PASSWORD",
+    "value" : "YOUR_NEO4J_PASSWORD",
+    "description" : ""
+  }, {
+    "name" : "NEO4J_DB",
+    "value" : "YOUR_NEO4J_DB",
+    "description" : ""
+  }, {
+    "name" : "NEO4J_PORT",
+    "value" : "YOUR_NEO4J_PORT",
+    "description" : ""
+  }, {
+    "name" : "NEO4J_USE_ROUTING_PROTOCOL",
+    "value" : "true",
+    "description" : ""
+  }, {
+    "name" : "NEO4J_USE_ENCRYPTION",
+    "value" : "true",
+    "description" : ""
+  } ]
+}
