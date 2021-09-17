@@ -1045,7 +1045,7 @@ MERGE (p)-[:RESIDES]->(x)
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\SAM\Neo4j\hop\projects\vaers\files\2020vaersdata.csv</filename>
+    <filename>${PROJECT_HOME}/files/2020vaersdata.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>

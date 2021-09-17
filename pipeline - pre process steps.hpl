@@ -193,7 +193,7 @@
     <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MERGE ( x:RecoveryStatus { recovd : row.recovd } )</cypher>
-    <batch_size>5000</batch_size>
+    <batch_size>${NEO4J_BATCH_SIZE}</batch_size>
     <read_only>N</read_only>
     <nr_retries_on_error/>
     <retry>Y</retry>
@@ -231,7 +231,7 @@ MERGE ( x:RecoveryStatus { recovd : row.recovd } )</cypher>
     <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MERGE ( x:Sex { sex : row.sex } )</cypher>
-    <batch_size>5000</batch_size>
+    <batch_size>${NEO4J_BATCH_SIZE}</batch_size>
     <read_only>N</read_only>
     <nr_retries_on_error/>
     <retry>Y</retry>
@@ -269,7 +269,7 @@ MERGE ( x:Sex { sex : row.sex } )</cypher>
     <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MERGE ( x:State { state : row.state } )</cypher>
-    <batch_size>5000</batch_size>
+    <batch_size>${NEO4J_BATCH_SIZE}</batch_size>
     <read_only>N</read_only>
     <nr_retries_on_error/>
     <retry>Y</retry>
@@ -312,7 +312,7 @@ MERGE ( x:Vaccine
   vax_manu : row.vax_manu
 } 
 )</cypher>
-    <batch_size>5000</batch_size>
+    <batch_size>${NEO4J_BATCH_SIZE}</batch_size>
     <read_only>N</read_only>
     <nr_retries_on_error/>
     <retry>Y</retry>
@@ -384,7 +384,7 @@ MERGE ( x:Vaccine
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\SAM\Neo4j\hop\projects\vaers\files\2020vaersdata.csv</filename>
+    <filename>${PROJECT_HOME}/files/2020vaersdata.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
@@ -801,7 +801,7 @@ MERGE ( x:Vaccine
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <filename>C:\SAM\Neo4j\hop\projects\vaers\files\2020vaersvax.csv</filename>
+    <filename>${PROJECT_HOME}/files/2020vaersvax.csv</filename>
     <filename_field/>
     <rownum_field/>
     <include_filename>N</include_filename>
