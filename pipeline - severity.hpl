@@ -572,7 +572,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( ae:AdverseEvent {vaers_id : row.vaers_id } )
 MERGE ( v:Severity {vaers_id : row.vaers_id } )
@@ -784,7 +784,7 @@ MERGE (ae)-[:HAD_SEVERITY]->(v)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( ae:AdverseEvent {vaers_id : row.vaers_id } )
 MERGE ( v:Severity {vaers_id : row.vaers_id } )
@@ -996,7 +996,7 @@ MERGE (ae)-[:HAD_SEVERITY]->(v)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( ae:AdverseEvent {vaers_id : row.vaers_id } )
 MERGE ( v:Severity {vaers_id : row.vaers_id } )
@@ -1208,7 +1208,7 @@ MERGE (ae)-[:HAD_SEVERITY]->(v)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( ae:AdverseEvent {vaers_id : row.vaers_id } )
 MERGE ( v:Severity {vaers_id : row.vaers_id } )

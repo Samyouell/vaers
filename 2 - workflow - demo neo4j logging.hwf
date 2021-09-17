@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workflow>
-  <name>1 - workflow - main</name>
+  <name>2 - workflow - demo neo4j logging</name>
   <name_sync_with_filename>Y</name_sync_with_filename>
   <description/>
   <extended_description/>
   <workflow_version/>
   <created_user>-</created_user>
-  <created_date>2021/08/05 16:54:09.979</created_date>
+  <created_date>2021/09/13 15:42:54.298</created_date>
   <modified_user>-</modified_user>
-  <modified_date>2021/08/05 16:54:09.979</modified_date>
+  <modified_date>2021/09/13 15:42:54.298</modified_date>
   <parameters>
     </parameters>
   <actions>
@@ -37,8 +37,8 @@
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>720</xloc>
-      <yloc>32</yloc>
+      <xloc>800</xloc>
+      <yloc>208</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -67,8 +67,8 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
 ;</script>
       <replace_variables>N</replace_variables>
       <parallel>N</parallel>
-      <xloc>544</xloc>
-      <yloc>32</yloc>
+      <xloc>624</xloc>
+      <yloc>208</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -81,8 +81,8 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
 ;</script>
       <replace_variables>N</replace_variables>
       <parallel>N</parallel>
-      <xloc>400</xloc>
-      <yloc>32</yloc>
+      <xloc>480</xloc>
+      <yloc>208</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -94,8 +94,8 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
       <loglevel>Basic</loglevel>
       <logsubject>FAILED TO CONNECT TO NEO4J</logsubject>
       <parallel>N</parallel>
-      <xloc>240</xloc>
-      <yloc>160</yloc>
+      <xloc>320</xloc>
+      <yloc>336</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -107,8 +107,8 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
         <connection>Neo Vaers</connection>
       </connections>
       <parallel>N</parallel>
-      <xloc>240</xloc>
-      <yloc>32</yloc>
+      <xloc>320</xloc>
+      <yloc>208</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -125,8 +125,8 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
       <weekDay>1</weekDay>
       <DayOfMonth>1</DayOfMonth>
       <parallel>N</parallel>
-      <xloc>128</xloc>
-      <yloc>32</yloc>
+      <xloc>208</xloc>
+      <yloc>208</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -154,37 +154,8 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>720</xloc>
-      <yloc>192</yloc>
-      <attributes_hac/>
-    </action>
-    <action>
-      <name>pipeline - misc after base nodes.hpl</name>
-      <description/>
-      <type>PIPELINE</type>
-      <attributes/>
-      <filename>C:\SAM\Neo4j\hop\projects\vaers\pipeline - misc after base nodes.hpl</filename>
-      <params_from_previous>N</params_from_previous>
-      <exec_per_row>N</exec_per_row>
-      <clear_rows>N</clear_rows>
-      <clear_files>N</clear_files>
-      <set_logfile>N</set_logfile>
-      <logfile/>
-      <logext/>
-      <add_date>N</add_date>
-      <add_time>N</add_time>
-      <loglevel>Basic</loglevel>
-      <set_append_logfile>N</set_append_logfile>
-      <wait_until_finished>Y</wait_until_finished>
-      <follow_abort_remote>N</follow_abort_remote>
-      <create_parent_folder>N</create_parent_folder>
-      <run_configuration>local</run_configuration>
-      <parameters>
-        <pass_all_parameters>Y</pass_all_parameters>
-      </parameters>
-      <parallel>N</parallel>
-      <xloc>928</xloc>
-      <yloc>112</yloc>
+      <xloc>800</xloc>
+      <yloc>368</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -212,8 +183,8 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>928</xloc>
-      <yloc>192</yloc>
+      <xloc>1008</xloc>
+      <yloc>368</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -241,8 +212,8 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>928</xloc>
-      <yloc>272</yloc>
+      <xloc>1008</xloc>
+      <yloc>448</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -270,8 +241,8 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>928</xloc>
-      <yloc>352</yloc>
+      <xloc>1008</xloc>
+      <yloc>528</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -288,8 +259,8 @@ MATCH (v:VisitType) WHERE v.ofc_visit=true SET v:Visit_Ofc
 ;</script>
       <replace_variables>N</replace_variables>
       <parallel>N</parallel>
-      <xloc>1136</xloc>
-      <yloc>112</yloc>
+      <xloc>1264</xloc>
+      <yloc>288</yloc>
       <attributes_hac/>
     </action>
     <action>
@@ -317,29 +288,44 @@ MATCH (v:VisitType) WHERE v.ofc_visit=true SET v:Visit_Ofc
         <pass_all_parameters>Y</pass_all_parameters>
       </parameters>
       <parallel>N</parallel>
-      <xloc>928</xloc>
-      <yloc>432</yloc>
+      <xloc>1008</xloc>
+      <yloc>608</yloc>
+      <attributes_hac/>
+    </action>
+    <action>
+      <name>pipeline - misc after base nodes - LOGGING DEMO.hpl</name>
+      <description/>
+      <type>PIPELINE</type>
+      <attributes/>
+      <filename>C:\SAM\Neo4j\hop\projects\vaers\pipeline - misc after base nodes - LOGGING DEMO.hpl</filename>
+      <params_from_previous>N</params_from_previous>
+      <exec_per_row>N</exec_per_row>
+      <clear_rows>N</clear_rows>
+      <clear_files>N</clear_files>
+      <set_logfile>N</set_logfile>
+      <logfile/>
+      <logext/>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <loglevel>Basic</loglevel>
+      <set_append_logfile>N</set_append_logfile>
+      <wait_until_finished>Y</wait_until_finished>
+      <follow_abort_remote>N</follow_abort_remote>
+      <create_parent_folder>N</create_parent_folder>
+      <run_configuration>local</run_configuration>
+      <parameters>
+        <pass_all_parameters>Y</pass_all_parameters>
+      </parameters>
+      <parallel>N</parallel>
+      <xloc>1008</xloc>
+      <yloc>288</yloc>
       <attributes_hac/>
     </action>
   </actions>
   <hops>
     <hop>
-      <from>Start</from>
-      <to>Check Neo4j Connection</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>Y</unconditional>
-    </hop>
-    <hop>
-      <from>Check Neo4j Connection</from>
-      <to>Nuke and Pave the DB</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>Nuke and Pave the DB</from>
-      <to>Create Constraints</to>
+      <from>pipeline - pre process steps.hpl</from>
+      <to>pipeline - base nodes population.hpl</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
@@ -352,6 +338,20 @@ MATCH (v:VisitType) WHERE v.ofc_visit=true SET v:Visit_Ofc
       <unconditional>N</unconditional>
     </hop>
     <hop>
+      <from>Nuke and Pave the DB</from>
+      <to>Create Constraints</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>Check Neo4j Connection</from>
+      <to>Nuke and Pave the DB</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
       <from>Check Neo4j Connection</from>
       <to>LOG - fail to connect</to>
       <enabled>Y</enabled>
@@ -359,50 +359,50 @@ MATCH (v:VisitType) WHERE v.ofc_visit=true SET v:Visit_Ofc
       <unconditional>N</unconditional>
     </hop>
     <hop>
-      <from>pipeline - pre process steps.hpl</from>
-      <to>pipeline - base nodes population.hpl</to>
+      <from>Start</from>
+      <to>Check Neo4j Connection</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
+      <unconditional>Y</unconditional>
     </hop>
     <hop>
       <from>pipeline - base nodes population.hpl</from>
-      <to>pipeline - misc after base nodes.hpl</to>
-      <enabled>Y</enabled>
+      <to>pipeline - vax data.hpl</to>
+      <enabled>N</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
       <from>pipeline - base nodes population.hpl</from>
       <to>pipeline - patient.hpl</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>pipeline - base nodes population.hpl</from>
-      <to>pipeline - vax data.hpl</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
       <from>pipeline - base nodes population.hpl</from>
       <to>pipeline - severity.hpl</to>
-      <enabled>Y</enabled>
-      <evaluation>Y</evaluation>
-      <unconditional>N</unconditional>
-    </hop>
-    <hop>
-      <from>pipeline - misc after base nodes.hpl</from>
-      <to>Create additional labels</to>
-      <enabled>Y</enabled>
+      <enabled>N</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>
     </hop>
     <hop>
       <from>pipeline - base nodes population.hpl</from>
       <to>pipeline - symptoms.hpl</to>
+      <enabled>N</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>pipeline - base nodes population.hpl</from>
+      <to>pipeline - misc after base nodes - LOGGING DEMO.hpl</to>
+      <enabled>Y</enabled>
+      <evaluation>Y</evaluation>
+      <unconditional>N</unconditional>
+    </hop>
+    <hop>
+      <from>pipeline - misc after base nodes - LOGGING DEMO.hpl</from>
+      <to>Create additional labels</to>
       <enabled>Y</enabled>
       <evaluation>Y</evaluation>
       <unconditional>N</unconditional>

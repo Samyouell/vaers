@@ -190,7 +190,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MERGE ( x:RecoveryStatus { recovd : row.recovd } )</cypher>
     <batch_size>5000</batch_size>
@@ -228,7 +228,7 @@ MERGE ( x:RecoveryStatus { recovd : row.recovd } )</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MERGE ( x:Sex { sex : row.sex } )</cypher>
     <batch_size>5000</batch_size>
@@ -266,7 +266,7 @@ MERGE ( x:Sex { sex : row.sex } )</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MERGE ( x:State { state : row.state } )</cypher>
     <batch_size>5000</batch_size>
@@ -304,7 +304,7 @@ MERGE ( x:State { state : row.state } )</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MERGE ( x:Vaccine 
 { vax_name : row.vax_name,

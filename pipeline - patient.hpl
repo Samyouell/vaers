@@ -239,7 +239,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( p:Patient {vaers_id : row.vaers_id } )
 MERGE ( a:Allergies { allergies : row.allergies } )
@@ -449,7 +449,7 @@ MERGE (p)-[:HAS_ALLERGIES]->(a)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( p:Patient {vaers_id : row.vaers_id } )
 MERGE ( d:BirthDefect { birth_defect : row.birth_defect } )
@@ -659,7 +659,7 @@ MERGE (p)-[:HAS_BIRTH_DEFECT]->(d)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( p:Patient {vaers_id : row.vaers_id } )
 MERGE ( d:Disability { disable : row.disable } )
@@ -869,7 +869,7 @@ MERGE (p)-[:HAS_DISABILITY]->(d)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( p:Patient {vaers_id : row.vaers_id } )
 MERGE ( c:History { history : row.history } )
@@ -1079,7 +1079,7 @@ MERGE (p)-[:HAS_HISTORY]->(c)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( p:Patient {vaers_id : row.vaers_id } )
 MERGE ( i:Illnesses { curr_ill : row.curr_ill } )
@@ -1289,7 +1289,7 @@ MERGE (p)-[:HAS_ILLNESSES]->(i)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( p:Patient {vaers_id : row.vaers_id } )
 MERGE ( m:Medications { vaers_id : row.vaers_id } )
@@ -1500,7 +1500,7 @@ MERGE (p)-[:TAKES_MEDICATIONS]->(m)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( p:Patient {vaers_id : row.vaers_id } )
 CREATE ( c:PriorVax {vaers_id : row.vaers_id} )

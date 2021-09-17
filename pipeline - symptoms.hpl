@@ -79,7 +79,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( ae:AdverseEvent {vaers_id : row.vaers_id } )
 MERGE ( c:SymptomName { symptom: row.symptom2 } )
@@ -169,7 +169,7 @@ MERGE (ae)-[:HAS_SYMPTOM]->(c)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( ae:AdverseEvent {vaers_id : row.vaers_id } )
 MERGE ( c:SymptomName { symptom: row.symptom3 } )
@@ -259,7 +259,7 @@ MERGE (ae)-[:HAS_SYMPTOM]->(c)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( ae:AdverseEvent {vaers_id : row.vaers_id } )
 MERGE ( c:SymptomName { symptom: row.symptom4 } )
@@ -349,7 +349,7 @@ MERGE (ae)-[:HAS_SYMPTOM]->(c)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( ae:AdverseEvent {vaers_id : row.vaers_id } )
 MERGE ( c:SymptomName { symptom: row.symptom5 } )
@@ -439,7 +439,7 @@ MERGE (ae)-[:HAS_SYMPTOM]->(c)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH ( ae:AdverseEvent {vaers_id : row.vaers_id } )
 MERGE ( c:SymptomName { symptom: row.symptom1 } )

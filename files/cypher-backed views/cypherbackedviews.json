@@ -1,0 +1,19 @@
+{
+  "Views":[
+     {
+        "Name":"CypherBackedView_DeathsPerVaccine",
+        "CypherQuery":"MATCH (dt:Death)--(a:AdverseEvent)--(ve:VaxEvent)--(vd:VaxDetail)--(v:Vaccine) RETURN v.vax_type as vax_type, v.vax_name as vax_name, count(*) as deaths",
+        "Columns":[
+           {
+              "Name":"vax_type"
+           },
+           {
+              "Name":"vax_name"
+           },
+           {
+              "Name":"deaths"
+           }
+        ]
+     }
+  ]
+}

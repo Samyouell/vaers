@@ -39,7 +39,7 @@
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <connection>Neo Desktop Vaers</connection>
+    <connection>Neo Vaers</connection>
     <cypher>UNWIND $rows AS row
 MATCH (ve:VaxEvent {vaers_id : row.vaers_id } )
 MATCH (v:Vaccine {vax_name : row.vax_name } )
