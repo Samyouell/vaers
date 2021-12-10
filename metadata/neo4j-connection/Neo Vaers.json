@@ -4,7 +4,7 @@
   "trustAllCertificatesVariable": "",
   "databaseName": "${NEO4J_DB}",
   "maxConnectionLifetime": "",
-  "routingVariable": " ${NEO4J_USE_ROUTING_PROTOCOL}",
+  "routingVariable": "",
   "manualUrls": [],
   "routingPolicy": "${NEO4J_ROUTING_POLICY}",
   "boltPort": "${NEO4J_PORT}",
