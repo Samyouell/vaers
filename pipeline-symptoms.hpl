@@ -610,7 +610,7 @@ MERGE (ae)-[:HAS_SYMPTOM]->(c)</cypher>
       <method>none</method>
       <schema_name/>
     </partitioning>
-    <send_true_to>Merge Nodes:  SymptomName . Symptom 5</send_true_to>
+    <send_true_to>test symptom</send_true_to>
     <send_false_to/>
     <compare>
       <condition>
