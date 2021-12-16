@@ -1,0 +1,16 @@
+{
+  "engineRunConfiguration": {
+    "Remote": {
+      "export_resources": false,
+      "resources_target_folder": "",
+      "safe_mode": "local",
+      "resources_source_folder": "",
+      "server_poll_interval": "",
+      "hop_server": "sam-hop-server",
+      "server_poll_delay": ""
+    }
+  },
+  "configurationVariables": [],
+  "name": "sam-server-run-config",
+  "description": ""
+}
