@@ -17,7 +17,7 @@
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>C:\SAM\Neo4j\hop\projects\vaers\pipeline-pre-process-steps.hpl</filename>
+      <filename>${PROJECT_HOME}/pipeline-pre-process-steps.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
