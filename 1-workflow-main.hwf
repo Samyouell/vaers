@@ -163,7 +163,7 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>C:\SAM\Neo4j\hop\projects\vaers\pipeline-misc-after-base-nodes.hpl</filename>
+      <filename>${PROJECT_HOME}/pipeline-misc-after-base-nodes.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -192,7 +192,7 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>C:\SAM\Neo4j\hop\projects\vaers\pipeline-vax-data.hpl</filename>
+      <filename>${PROJECT_HOME}/pipeline-vax-data.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -221,7 +221,7 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>C:\SAM\Neo4j\hop\projects\vaers\pipeline-patient.hpl</filename>
+      <filename>${PROJECT_HOME}/pipeline-patient.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -250,7 +250,7 @@ CREATE CONSTRAINT UniqueSymptomNameSymptom IF NOT EXISTS ON (a:SymptomName) ASSE
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>C:\SAM\Neo4j\hop\projects\vaers\pipeline-severity.hpl</filename>
+      <filename>${PROJECT_HOME}/pipeline-severity.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
@@ -297,7 +297,7 @@ MATCH (v:VisitType) WHERE v.ofc_visit=true SET v:Visit_Ofc
       <description/>
       <type>PIPELINE</type>
       <attributes/>
-      <filename>C:\SAM\Neo4j\hop\projects\vaers\pipeline-symptoms.hpl</filename>
+      <filename>${PROJECT_HOME}/pipeline-symptoms.hpl</filename>
       <params_from_previous>N</params_from_previous>
       <exec_per_row>N</exec_per_row>
       <clear_rows>N</clear_rows>
